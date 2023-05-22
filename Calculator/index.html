@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style></style>
+
+</head>
+<body>
+    <h1><b>Calculator</b></h1>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <button style=" background-image: linear-gradient(lavender,pink)"></button>
+        <button onclick="clearDisplay()" style="background-color: rgb(137, 137, 226)">AC</button>
+        <button onclick="deleteCharacter()" style="background-color: rgb(137, 137, 226)">Del</button>
+        <button onclick="appendOperator('%')" style="background-color: rgb(137, 137, 226)">%</button>
+        <button onclick="appendNumber(7)">7</button>
+        <button onclick="appendNumber(8)">8</button>
+        <button onclick="appendNumber(9)">9</button>
+        <button onclick="appendOperator('+')" style="background-color: rgb(137, 137, 226);">+</button>
+        <button onclick="appendNumber(4)">4</button>
+        <button onclick="appendNumber(5)">5</button>
+        <button onclick="appendNumber(6)">6</button>
+        <button onclick="appendOperator('-')" style="background-color: rgb(137, 137, 226)">-</button>
+        <button onclick="appendNumber(1)">1</button>
+        <button onclick="appendNumber(2)">2</button>
+        <button onclick="appendNumber(3)">3</button>
+        <button onclick="appendOperator('*')" style="background-color: rgb(137, 137, 226)">*</button>
+        <button onclick="appendNumber(0)">0</button>
+        <button onclick="appendOperator('.')">.</button>
+        <button onclick="calculateResult()" id="equalto" style="background-color:rgb(77, 77, 170)">=</button>
+        <button onclick="appendOperator('/')" style="background-color: rgb(137, 137, 226)">/</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
